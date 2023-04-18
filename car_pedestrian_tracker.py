@@ -1,10 +1,11 @@
 import cv2
 
-# read the video
+# set up file paths
 video_file = "your_video.mp4"
-video = cv2.VideoCapture(video_file)
 pedestrian_tracker_file = "pedestrian_tracker.xml"
 car_tracker_file = "car_tracker.xml"
+
+# read the video
 
 # import pedestrian and car tracker
 pedestrian_tracker = cv2.CascadeClassifier(pedestrian_tracker_file)
