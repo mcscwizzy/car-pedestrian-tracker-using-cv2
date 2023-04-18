@@ -6,6 +6,7 @@ pedestrian_tracker_file = "pedestrian_tracker.xml"
 car_tracker_file = "car_tracker.xml"
 
 # read the video
+video = cv2.VideoCapture(video_file)
 
 # import pedestrian and car tracker
 pedestrian_tracker = cv2.CascadeClassifier(pedestrian_tracker_file)
